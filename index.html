@@ -3,120 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doomsday Farm Bot Store</title>
+    <title>Doomsday Bot | #1 Professional Automation</title>
     <style>
-        body { 
-            background-color: #0b0b0b; 
-            color: #eeeeee; 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; 
-            padding: 10px;
+        :root {
+            --primary: #007bff;
+            --dark-bg: #0f1011;
+            --card-bg: #1c1e21;
+            --text-main: #ffffff;
+            --text-dim: #b0b3b8;
         }
-        .main-layout {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 20px auto;
-            flex-wrap: wrap;
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
         }
-        .container { 
-            flex: 2;
-            min-width: 350px;
-            background: #1a1a1a; 
-            padding: 30px; 
-            border-radius: 15px; 
-            border: 1px solid #333;
+        .navbar {
+            padding: 20px;
             text-align: center;
+            background: rgba(0,0,0,0.5);
+            border-bottom: 1px solid #333;
         }
-        .side-panel {
-            flex: 1;
-            min-width: 250px;
-            max-width: 300px;
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(0deg, var(--dark-bg) 0%, #1a1c1e 100%);
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+        .hero-section p {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 10px auto;
+        }
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
         }
         .card {
-            background: #111;
-            border: 1px solid #333;
-            padding: 20px;
+            background: var(--card-bg);
             border-radius: 12px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        h1 { color: #ff4500; text-transform: uppercase; margin-bottom: 5px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #000; }
-        th, td { padding: 12px; border: 1px solid #222; text-align: center; }
-        th { background: #333; }
-        .price { color: #ffd700; font-weight: bold; }
-        .btn { 
-            display: block; 
-            padding: 15px; 
-            margin: 10px 0; 
-            border-radius: 8px; 
-            text-decoration: none; 
-            font-weight: bold; 
+            padding: 30px;
+            border: 1px solid #333;
+            transition: transform 0.3s;
             text-align: center;
-            color: white;
         }
-        .discord-btn { background: #5865F2; }
-        .tele-btn { background: #0088cc; }
-        .dl-btn { background: #444; }
-        .free-btn { background: #e67e22; margin-top: 10px; }
-        .footer { text-align: center; margin-top: 50px; color: #444; font-size: 0.8rem; }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+        .bot-img {
+            width: 120px;
+            height: 120px;
+            background: #2a2d31;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .price-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        .price-table td {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .price-highlight { color: #ffd700; font-weight: bold; }
+        
+        .btn {
+            display: block;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn-blue { background: var(--primary); color: white; }
+        .btn-outline { border: 1px solid #444; color: var(--text-dim); }
+        .btn-orange { background: #f39c12; color: white; }
+        
+        .mumu-tag {
+            display: inline-block;
+            background: rgba(0,123,255,0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
 
-    <div class="main-layout">
+    <div class="navbar">
+        <strong style="font-size: 1.5rem;">DOOMSDAY BOTS</strong>
+    </div>
+
+    <div class="hero-section">
+        <h1>DOOMSDAY BOT</h1>
+        <p>The #1 Automation tool for Doomsday: Last Survivors. Optimized for performance and safety.</p>
+    </div>
+
+    <div class="main-container">
         
-        <div class="side-panel">
-            <div class="card">
-                <h3 style="color: #3498db; margin-top: 0;">🖥️ REQUIREMENTS</h3>
-                <p style="font-size: 0.9rem; color: #ccc;">
-                    Works <b>ONLY</b> on:<br>
-                    - MuMu Player 6/12<br>
-                    - Windows 10/11
-                </p>
-            </div>
-        </div>
-
-        <div class="container">
-            <h1>DOOMSDAY BOT</h1>
-            <p style="color: #888;">Professional Automation Tools</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Slots</th>
-                        <th>Price (Euro/UPI)</th>
-                        <th>In-Game</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>5 Farms</td><td class="price">€10 / ₹900</td><td>Packs</td></tr>
-                    <tr><td>10 Farms</td><td class="price">€15 / ₹1350</td><td>Packs</td></tr>
-                    <tr><td>15 Farms</td><td class="price">€20 / ₹1800</td><td>Packs</td></tr>
-                </tbody>
+        <div class="card">
+            <div class="bot-img">🤖</div>
+            <div class="mumu-tag">MuMu Player Exclusive</div>
+            <h3>Main Farm Bot</h3>
+            <p style="color: var(--text-dim); font-size: 0.9rem;">Auto-gathering, RSS management, and 24/7 Shield monitoring.</p>
+            
+            <table class="price-table">
+                <tr><td>5 Slots</td><td class="price-highlight">€10 / ₹900</td></tr>
+                <tr><td>10 Slots</td><td class="price-highlight">€15 / ₹1350</td></tr>
+                <tr><td>15 Slots</td><td class="price-highlight">€20 / ₹1800</td></tr>
             </table>
 
-            <a href="https://discord.com/users/fra_It" target="_blank" class="btn discord-btn">👾 CONTACT DISCORD: fra_It</a>
-            <a href="https://t.me/IfarmDls" target="_blank" class="btn tele-btn">✈️ TELEGRAM CHANNEL</a>
-            <a href="https://drive.google.com/file/d/1Dt4lxcbLNtj3z06SnXN7hJrTQuXv0Pn_/view?usp=sharing" target="_blank" class="btn dl-btn">📥 DOWNLOAD BOT</a>
+            <a href="https://t.me/IfarmDls" class="btn btn-blue">Join Telegram Channel</a>
+            <a href="https://discord.com/users/fra_It" class="btn btn-outline">Contact fra_It</a>
         </div>
 
-        <div class="side-panel">
-            <div class="card" style="border-color: #ffd700;">
-                <h3 style="color: #ffd700; margin-top: 0;">🎁 FREE TRIAL</h3>
-                <p style="font-size: 0.9rem; color: #ccc;">
-                    Want to test a <b>Free Bot</b> or get a Trial Key? Contact the developer below.
-                </p>
-                <a href="https://t.me/stocaxxo84" target="_blank" class="btn free-btn">💬 Contact @stocaxxo84</a>
-            </div>
+        <div class="card">
+            <div class="bot-img">🎁</div>
+            <h3>Free Trial / Dev Keys</h3>
+            <p style="color: var(--text-dim); font-size: 0.9rem;">Looking for a free version or a limited-time trial key? Contact our developer directly.</p>
+            <br>
+            <a href="https://t.me/stocaxxo84" class="btn btn-orange">Message @stocaxxo84</a>
+            <a href="https://drive.google.com/file/d/1Dt4lxcbLNtj3z06SnXN7hJrTQuXv0Pn_/view?usp=sharing" class="btn btn-outline">Download Software</a>
         </div>
 
     </div>
 
-    <div class="footer">
-        &copy; 2024 Doomsday Bot Official.
+    <div style="text-align: center; padding: 40px; color: #555;">
+        &copy; 2024 Doomsday Bot Official. Not affiliated with IGG.
     </div>
 
 </body>
